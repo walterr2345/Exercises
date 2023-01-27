@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="app.js"></script>
+    <button onclick="obtener_locarStorage()"></button>
+    <form action="submit" id="Register">
+        <fieldset>
+            <legend>General Infomation:</legend>
+            <label for="AriDate">Arrival Date:</label>
+            <input type="date" required="" id="ArriDate"><br><br>
+            <label for="Nights">Nights</label>
+            <input type="number" required id="nights"><br><br>
+            <label for="Adults">Adults</label>
+            <input type="number" id="adults"><br><br>
+            <label for="Children">Children</label>
+            <input type="number" required id="childs"><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="RoomType">Room Type:</label>
+            <input type="radio" name="room" value="Standard" checked>Standard
+            <input type="radio" name="room" value="Bussiness">Bussiness
+            <input type="radio" name="room" value="Suite">Suite <br><br>
+            <label for="BedType">Bed Type:</label>
+            <input type="radio" name="bed" value="King" checked>King
+            <input type="radio" name="bed" value="Double">Double <br><br>
+            <input type="checkbox" id="smoking">Smoking
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="Name">Name</label>
+            <input type="text" id="name"><br><br>
+            <label for="Email">Email</label>
+            <input type="email" id="email"><br><br>
+            <label for="Phone">Phone:</label>
+            <input type="number" id="phone"><br><br>
+        </fieldset>
+        <br>
+        <input type="button" onclick="guardar_localStorage()" value="Submit Reservation">
+        <input type="button" onclick="reset()" value="Clear">
+    </form>
+
+</body>
+
+</html>
